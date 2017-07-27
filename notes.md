@@ -26,7 +26,8 @@
 
 ### 2017-07-26-Wednesday
 
-- worked w/J.M. to get solr ports opened
+- showed them the [working site](http://dcdscit.services.brown.edu/iip_smr_dev/search/) on the server
+    - requires VPN
 
 - covered automatic log-rotataion
     - mac: `cd /etc/newsyslog.d/`
@@ -79,6 +80,10 @@
         - deletes from solr any needed deletions
 
 - gave them overview of xml & stylesheets
+
+- discussed approaches to 'Stories' feature S. would like to implement
+    - showed them architecture of how basic markdown drives the '[welcome](http://dcdscit.services.brown.edu/iip_smr_dev/info/welcome/)', 'about', etc. pages in site
+    - showed them how they can use that model to experiment with 'Stories' if they desire
 
 - looked into S.'s report of a problem with bibliographies
 
