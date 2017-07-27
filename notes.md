@@ -1,5 +1,18 @@
 ### 2017-07-27-Thursday
 
+- laptop permissions fix
+
+    - step a: update a gitconfig entry
+
+            cd /path/to/iip_summer_dev_stuff/iip_smr_web_project
+            git config core.sharedRepository group
+
+    - step b: update project-directory permissions
+
+            sudo chmod u=rwx,g=rwx,o=rx /path/to/iip_summer_dev_stuff/iip_smr_web_project
+            sudo find ./ -type d | xargs chmod u=rwx,g=rwx,o=rx
+            sudo find ./ -type f | xargs sudo chmod u=rw,g=rw,o=r
+
 - goals:
 
     - go over update script
