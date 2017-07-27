@@ -45,6 +45,8 @@
 
 - goal: master always works, even if not complete
 
+- reminded them to check with G. re her upcoming presentation dates -- if they want to check out a branch on their server
+
 - showed github [releases](https://github.com/Brown-University-Library/iip_smr_web_project/releases)
     - noted one approach: to make releases reflect versions of working code put into production
     - noted benefit: easy to find working version to revert to if things go south
