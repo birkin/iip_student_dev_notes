@@ -10,6 +10,7 @@
     - step b: update project-directory permissions
 
             sudo chmod u=rwx,g=rwx,o=rx /path/to/iip_summer_dev_stuff/iip_smr_web_project
+            cd /path/to/iip_summer_dev_stuff/iip_smr_web_project
             sudo find ./ -type d | xargs chmod u=rwx,g=rwx,o=rx
             sudo find ./ -type f | xargs sudo chmod u=rw,g=rw,o=r
 
