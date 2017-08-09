@@ -1,3 +1,28 @@
+### 2017-08-07-Monday
+
+- showed W. & M. that adding a `<div classorid="foo">` tag in the markdown might be one solution for more customized css for stories.
+    - idea assumes that the Stories model/table _might_ include an optional custom-css path or url.
+    - W. suggested good idea of having a few pre-set css classes that could just be dropped in to the markdown.
+
+- showed W. & M. that the existing admin-markdown implementation is based on an installed library: [django-markdown-deux](https://github.com/trentm/django-markdown-deux), which itself uses the library [python-markdown2](https://github.com/trentm/python-markdown2) -- which offers possibly-useful features.
+    - the python-markdown2 library [readme](https://github.com/trentm/python-markdown2#extra-syntax-aka-extensions) shows that features beyond standard-markdown can be enabled -- like footnotes -- with a link to these '[extras](https://github.com/trentm/python-markdown2/wiki/Extras)' documentation.
+    - the django-markdown-deux library installed into django implements these 'extras' in the [django settings file](https://github.com/trentm/django-markdown-deux#markdown_deux_styles-setting).
+        - the default summer-student project [specifies a minimal set of extras](https://github.com/Brown-University-Library/iip_smr_web_project/blob/f75a6d8aef2252bc783a035addf5a147ce7a332c/iip_smr_config/settings.py#L114-L124); it may be worth experimenting with what else could be enabled.
+
+
+
+### 2017-07-31-Monday
+
+- showed M. how the markdown-admin works for static pages.
+    - student thought that, given G's presentation this week, and given high initiation-cost, wouldn't be good to do much admin/markdown work this week
+
+- followup thought to communicate to W. re branch vs master changes...
+    - Situation: G. presents this week, so we want to minimize chance of unexpected problems with the site
+    - So question: can they commit development to master, and just not run the script to update the server?
+    - I recommended using a branch, but noted the commit-to-master without updating the server could be an alternative.
+        - with further thought, I more strongly recommend a branch for the followig scenario: Imagine a last-minute bug is found that really needs to be fixed. It would be _so_ much easier to fix the bug if updating the server's master branch did _not_ introduce lots of other changes.
+
+
 ### 2017-07-27-Thursday
 
 - unicode & python info...
