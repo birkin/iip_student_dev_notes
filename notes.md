@@ -1,3 +1,30 @@
+### 2017-09-27-Wednesday
+
+- The idea: WordPress as content-managment-system for static pages. Stories created/edited in wordpress could be ingested into the new iip stories site.
+    - Some benefits to this, over markdown...
+        - Wordpress offers friendlier visual-editing tools.
+        - It offers more formatting options.
+        - It versions each page's content; it's easy to compare versions and revert.
+        - It offers Brown and non-Brown logins.
+        - The Library has its own wordpress install, which is heavily used and not going away.
+
+- [my example test site](https://worfdev.services.brown.edu/create/birkin/)
+    - this server requires vpn
+    - see the different pages, like [this one with images](https://worfdev.services.brown.edu/create/birkin/this-is-a-new-page/)
+    - i'll give each of you editor permissions on this experimental site, so you can freely edit these pages.
+
+- [wordpress api info](https://codex.wordpress.org/WordPress_APIs)
+    - in particular the [rest-api](https://developer.wordpress.org/rest-api/)
+    - there's a [demo external api site for experimenting](https://demo.wp-api.org)
+    - from a hopeful experiment, it looks like you can use the rest-api example calls on any wordpress site!
+        - so, for my site, the [pages api](https://developer.wordpress.org/rest-api/reference/pages/) that lists pages yields [this json](https://worfdev.services.brown.edu/create/birkin/wp-json/wp/v2/pages). Cool, eh?
+        - from that page-listing output, you can see that the `this-is-a-new-page` webpage, referenced above, has an id of 5, so you can use the single-page pages-api to get that page's content, [like this](https://worfdev.services.brown.edu/create/birkin/wp-json/wp/v2/pages/5)
+
+- an issue
+    - I'm not clear how to get access to, or utilize the css that's associated with a page, but I think there are multiple options related to this.
+
+---
+
 ### 2017-08-07-Monday
 
 - showed W. & M. that adding a `<div classorid="foo">` tag in the markdown might be one solution for more customized css for stories.
