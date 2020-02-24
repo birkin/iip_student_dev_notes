@@ -1,4 +1,18 @@
-### 20120-Feb-12-Wednesday
+### 2020-Feb-24-Monday
+
+##### see sent email locally
+
+- issue: sometimes your webapp may want to send you email -- how to see that, without installing/activating email software:
+
+- solution:
+    - open up another terminal window/tab
+    - enter (no `$` prompt): `$ python3 -m smtpd -n -c DebuggingServer localhost:1026`
+    - any email your webapp sends (assuming the host/part is set to `localhost/1026`) will display in that terminal window
+
+---
+
+
+### 2020-Feb-19-Wednesday
 
 ##### review django flow...
 
