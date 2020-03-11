@@ -1,3 +1,25 @@
+### 2020-Mar-11-Wednesday
+
+##### solr info
+
+- great tutorial: <https://github.com/hectorcorrea/solr-for-newbies/blob/master/tutorial.md>
+
+- simple facet-query: <https://library.brown.edu/cds/projects/iip/api/?start=0&rows=0&indent=on&fl=type&q=*:*&facet=on&facet.field=type>
+    - shows start and end rows as 0, since this query is just to get facet info
+    - nothing is being filtered -- `q=*:*`
+    - shows only the counts for the field `type`
+
+- another facet-query: <https://library.brown.edu/cds/projects/iip/api/?start=0&rows=0&indent=on&fl=type,language&q=*:*&facet=on&facet.field=type&facet.field=language>
+    - same as above, but showing counts for `language`, in addition to `type`
+
+- mixing results and facets: <https://library.brown.edu/cds/projects/iip/api/?start=0&rows=6000&indent=on&fl=inscription_id,city_pleiades&q=(language:he)AND(religion:jewish)&facet=on&facet.field=type&facet.field=language&sort=inscription_id%20asc>
+    - I'm specifying different fields for the objects returned (`fl=inscription_id,city_pleiades`) -- than for the query (`q=(language:he)AND(religion:jewish)`)
+    - For easy checking on results, I added sorting of the returned objects (`sort=inscription_id%20asc`)
+
+
+---
+
+
 ### 2020-Feb-24-Monday
 
 ##### see sent email locally
